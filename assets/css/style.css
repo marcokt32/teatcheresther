@@ -1,0 +1,241 @@
+:root {
+    /*cores principais*/
+    --lavanda-cinza: #9791b7;
+    --bege-claro: #f8f0ca;
+    /*cores de apoio*/
+    --amendoa-clara: #EED7C2;
+    --rosa-palido: #D9BEC3;
+    --baunilha: #F8F0DE;
+    --cinza-claro-esverdeado: #E8EFED;
+    --lavanda-claro: #CBC6E0;
+    --cinza-purpura: #716D8A;
+    --cinza-purpura-50alfa: rgba(113,110,138,.5) ;
+    /*cores neutras*/
+    --off-white: #F5F4F0;
+    --cinza-palido: #E9E7EA;
+    --cinza-medio: #ADADAD;
+    --cinza-escuro: #6D6D6D;
+}
+
+footer{
+    background-color: var(--cinza-escuro);
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    background: url('../img/background.png') center center;
+    background-color: var(--baunilha);
+    /*background-image: linear-gradient(135deg, var(--lavanda-cinza) 20%, var(--amendoa-clara) 40%,var(--amendoa-clara) 45%, var(--lavanda-cinza) 60%);
+    background-image: linear-gradient(135deg, var(--lavanda-cinza) 20%, var(--bege-claro) 40%,var(--bege-claro) 45%, var(--lavanda-cinza) 60%);
+    animation: moveGradient 1.5s ease forwards;*/
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+}
+
+
+strong {
+    color: var(--azul-claro);
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    align-self: center;
+    font-size: 2em;
+}
+
+h3{
+    align-self: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h4{
+    align-self: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.lista-planos{
+    list-style-type: none;
+    padding: 5%;
+    display: flex;
+    gap: 3em;
+    height: 100%;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.list-item{
+    text-align: center;
+    height: 60%;
+    width: 40%;
+    background-color: var(--lavanda-claro);
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    gap: 1em;
+}
+
+a{
+    padding: .2em;
+    text-decoration: none;
+    color: var(--bege-claro);
+    font-size: 1.5em;
+}
+
+a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: var(--cinza-palido);
+    margin: 0 20%;
+    background-color: var(--cinza-purpura);
+    border: none;
+    border-radius: 3px;
+    transition: padding 0.1s ease, font-weight 0.1s ease;
+}
+
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+/* background animation */
+
+@keyframes moveGradient {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
+    
+}
+
+/*dimensionamento*/
+.home{
+    line-height: 3.5em;
+    margin: 0 10%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    gap: 1em;
+}
+
+header{
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cinza-purpura);
+    justify-content: space-around;
+    transition: opacity 0.3s ease, display 0.3s ease;
+    opacity: 0;
+}
+
+header .apresentacao .logo{
+    height: 10vh;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botao-contato{
+    border: 1px solid var(--bege-claro);
+    border-radius: 3px;
+}
+
+.logo-home{
+    height: 15vh;
+}
+
+.marca-texto{
+    background-color: greenyellow;
+}
+
+.planos{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--cinza-claro-esverdeado);
+    height: 85vh;
+    padding: 2em;
+}
+
+.whatsappicon{
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    right: 0;
+    height: 2.5em;
+}
+
+.whatsappicon:hover{
+    cursor: pointer;
+}
+
+.about{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 85vh;
+    padding: 2em;
+}
+
+.feedback{
+    background-color: var(--cinza-purpura);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 85vh;
+    padding: 2em;
+}
+
+.contato{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 85vh;
+    padding: 2em;
+}
+
+.sobre{
+    padding: 10%;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+}
